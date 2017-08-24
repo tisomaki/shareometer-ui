@@ -1,0 +1,31 @@
+<!-- Partial displaying user specific or common,overall statistics regarding latest journeys -->
+<div ng-controller="statsController">
+    <div class="row">
+        <div class="col">
+            <h3>Past journeys</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>User</th>
+                        <th>Kilometres</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="entry in journey.items">
+
+                        <td>{{entry.start}}</td>
+                        <td>{{entry.user}}</td>
+                        <td>{{entry.kilometres}}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

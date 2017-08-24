@@ -1,0 +1,135 @@
+{
+  "journeys": [
+    {
+      "id": 1,
+      "start": "2017-08-24T06:41:15+00:00",
+      "end": "2017-08-24T06:41:15+00:00",
+      "ended": true,
+      "kilometres": 1239817,
+      "user": 1
+    },
+    {
+      "id": 2,
+      "start": "2017-08-24T06:41:15+00:00",
+      "end": "2017-08-24T06:41:15+00:00",
+      "ended": true,
+      "kilometres": 1239817,
+      "user": 2
+    },
+    {
+      "id": 3,
+      "start": "2017-08-24T06:41:15+00:00",
+      "end": "2017-08-24T10:18:21.595Z",
+      "ended": true,
+      "kilometres": 1239817,
+      "user": 2
+    },
+    {
+      "id": 4,
+      "start": "2017-08-24T06:41:15+00:00",
+      "end": null,
+      "kilometres": null,
+      "ended": false,
+      "user": 2
+    },
+    {
+      "start": "2017-08-24T10:14:41.622Z",
+      "end": null,
+      "kilometres": null,
+      "user": 2,
+      "ended": false,
+      "id": 5
+    },
+    {
+      "start": "2017-08-24T10:16:21.083Z",
+      "end": null,
+      "kilometres": null,
+      "user": 2,
+      "ended": false,
+      "id": 6
+    },
+    {
+      "start": "2017-08-24T10:17:27.978Z",
+      "end": null,
+      "kilometres": null,
+      "user": 2,
+      "ended": false,
+      "id": 7
+    },
+    {
+      "start": "2017-08-24T10:19:23.979Z",
+      "end": null,
+      "kilometres": null,
+      "user": 2,
+      "ended": false,
+      "id": 8
+    },
+    {
+      "start": "2017-08-24T10:19:47.769Z",
+      "end": "2017-08-24T10:19:49.731Z",
+      "kilometres": null,
+      "user": 2,
+      "ended": true,
+      "id": 9
+    },
+    {
+      "start": "2017-08-24T10:50:36.547Z",
+      "end": "2017-08-24T10:50:40.972Z",
+      "user": 2,
+      "ended": true,
+      "id": 10
+    },
+    {
+      "start": "2017-08-24T10:51:00.938Z",
+      "end": "2017-08-24T10:51:03.332Z",
+      "user": 2,
+      "ended": true,
+      "id": 11
+    },
+    {
+      "start": "2017-08-24T10:54:29.196Z",
+      "end": "2017-08-24T10:54:35.309Z",
+      "user": 2,
+      "ended": true,
+      "id": 12
+    },
+    {
+      "start": "2017-08-24T10:56:05.468Z",
+      "end": "2017-08-24T10:56:07.547Z",
+      "user": 2,
+      "ended": true,
+      "id": 13
+    },
+    {
+      "start": "2017-08-24T10:56:34.575Z",
+      "end": "2017-08-24T10:56:36.765Z",
+      "user": 2,
+      "ended": true,
+      "id": 14,
+      "kilometres": "sdfsdf"
+    }
+  ],
+  "generalInfo": {
+    "amount": 234234,
+    "available": true
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Yessie"
+    },
+    {
+      "id": 2,
+      "name": "Tommy"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    }
+  ]
+}

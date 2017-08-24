@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+    <script src="partials/app/components/journey/journey.js"></script>
+    <script src="partials/app/components/stats/stats.js"></script>
+</head>
+
+<body>
+
+    <div ng-app="myApp" class="container" ng-controller="myCtrl">
+        <h1>Share-O-Meter</h1>
+        
+        <div ng-view></div>
+        
+    </div>
+
+
+    <script>
+        var app = angular.module("myApp", ['ngRoute','journey','stats']);
+
+        app.controller("myCtrl", function ($scope,$location) {
+            $scope.firstName = "John";
+            $scope.lastName = "Doe";
+
+            $scope.initJourney = function () {
+                $location.path("/journey");
+            };
+        });
+
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/journey", {
+                    templateUrl: "partials/app/components/journey/journeyView.html"
+                })
+                .when("/", {
+                    templateUrl: "partials/app/components/landing.html"
+                });
+        });
+
+
+
+        /* 
+        http.get("welcome.htm")
+            .then(function (response) {
+                $scope.myWelcome = response.data;
+            });*/
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!--
+    Partial including layout for flow, that includes kilometre check, starting, ending(incl. capturing kilometres)
+-->
+<div>journeyView</div>
+<div ng-controller="journeyController">
+
+
+    <div ng-switch on="view.mode">
+        <div ng-switch-when="validate">
+            <div class="row">
+                <div class="col text-center">
+                    <div ng-show="genericInfo.available" class="row">
+                        Current known amount of kilometres: {{genericInfo.amount}}. Is this ok?
+                    </div>
+                    <button type="button" class="btn btn-primary" ng-click="proceed()">Start</button>
+                </div>
+            </div>
+        </div>
+        <div ng-switch-when="end">
+            <div class="row">
+                <div class="col text-center">
+                    <div ng-show="genericInfo.available" class="row">
+                        Add counter here
+                    </div>
+                    <button type="button" class="btn btn-primary" ng-click="end()">End</button>
+                </div>
+            </div>
+        </div>
+        <div ng-switch-when="captureKilometres">
+            <div class="row">
+                <div class="col text-center">
+                    <form>
+                        Kilometres, please!
+                        <input type="text" ng-model="amount">
+                        <button type="button" class="btn btn-primary" ng-click="register(amount)"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
