@@ -1,0 +1,32 @@
+-Handle server-side errors uniformly across the whole site
+-Introduce testing of angular code
+OK -validate input
+OK -activate buttons according to 
+
+-----------------------
+
+OK -nested controllers
+-apply nested scope + Use event mechanism(emit,on,broadcast)
+-create custom directive
+-how to modularize applications
+-services,factory methods
+-createion and referring to specific modules(when to define dependencies etc)
+questions:
+-when to use templates and when snippets
+-add service between controllers and update - 
+-apply watch feature
+
+design best practices(and anti-patterns)
+
+-prototyping
+-angular scope
+-event pattern(upwards,downwards)
+
+-filters
+
+javascript closures(inner functions etc)
+OK promises(in angular and in general) and deferred objects - 
+---------------------------------------------------------
+---------------------------------------------------------
+
+-angular service versus factory function: constructor versus object literal

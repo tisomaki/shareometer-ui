@@ -107,6 +107,37 @@
       "ended": true,
       "id": 14,
       "kilometres": "sdfsdf"
+    },
+    {
+      "start": "2017-08-24T12:18:23.157Z",
+      "end": null,
+      "user": 2,
+      "ended": false,
+      "id": 15
+    },
+    {
+      "start": "2017-08-24T12:41:04.380Z",
+      "end": "2017-08-24T12:41:09.633Z",
+      "user": 2,
+      "ended": true,
+      "id": 16,
+      "kilometres": 34234234234
+    },
+    {
+      "start": "2017-08-25T12:08:27.157Z",
+      "end": "2017-08-25T12:08:32.234Z",
+      "user": 2,
+      "ended": true,
+      "id": 17,
+      "kilometres": 4234234234
+    },
+    {
+      "start": "2017-08-25T12:09:37.910Z",
+      "end": "2017-08-25T12:09:42.564Z",
+      "user": 2,
+      "ended": true,
+      "id": 18,
+      "kilometres": 354345345
     }
   ],
   "generalInfo": {

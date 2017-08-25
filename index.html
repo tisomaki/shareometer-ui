@@ -14,47 +14,41 @@
 
     <script src="partials/app/components/journey/journey.js"></script>
     <script src="partials/app/components/stats/stats.js"></script>
+    <script src="partials/app/shared/header/header.js"></script>
+    <script src="partials/app/components/landing/landing.js"></script>
 </head>
 
 <body>
 
-    <div ng-app="myApp" class="container" ng-controller="myCtrl">
-        <h1>Share-O-Meter</h1>
-        
+    
+    <div ng-app="myApp">
+            <div ng-include="'/partials/app/shared/header/header.html'"></div>
         <div ng-view></div>
         
     </div>
-
-
     <script>
-        var app = angular.module("myApp", ['ngRoute','journey','stats']);
+        var app = angular.module("myApp", ['ngRoute', 'journey', 'stats', 'header','landing']);
 
-        app.controller("myCtrl", function ($scope,$location) {
+        app.controller("myCtrl", ["$scope", "$location", "errorHandler", function ($scope, $location, errorHandler) {
             $scope.firstName = "John";
             $scope.lastName = "Doe";
 
-            $scope.initJourney = function () {
-                $location.path("/journey");
-            };
-        });
+            errorHandler.err("TESTING")
 
+        }]);
+        console.log("before setting routerPdirver")
         app.config(function ($routeProvider) {
             $routeProvider
                 .when("/journey", {
                     templateUrl: "partials/app/components/journey/journeyView.html"
                 })
                 .when("/", {
-                    templateUrl: "partials/app/components/landing.html"
+                    templateUrl: "partials/app/components/landing/landing.html"
                 });
         });
 
 
-
-        /* 
-        http.get("welcome.htm")
-            .then(function (response) {
-                $scope.myWelcome = response.data;
-            });*/
+        console.log("after setting routerPdirver")
     </script>
 </body>
 
